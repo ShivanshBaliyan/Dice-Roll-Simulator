@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.dice{
+    font-size: 7rem;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.roll-animation{
+    animation-name: roll;
+}
+
+@keyframes roll {
+    0%{
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+    100%{
+        transform: rotateY(720deg) rotateX(720deg);
+    }
+}
+
+.roll{
+    background-color: #3D9DC7;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.roll:hover {
+    background-color: #337fa1;
+}
+
+.roll:focus,
+.roll:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.history{
+    background-color: #E6E6E6;
+    border: none;
+    border-bottom: 2px solid #ADADAD;
+}
